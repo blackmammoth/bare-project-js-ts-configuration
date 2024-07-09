@@ -1,7 +1,6 @@
 # Setup `package.json`
 
 -   `npm init -y`
--   Then, set `"type": "module"`
 
 # Set up prettier and es-lint-airbnb
 
@@ -103,4 +102,21 @@ public
     },
 ```
 
+-   Create `tsconfig.json` file and add the following:-
+
+```json
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true
+    }
+}
+```
+
 -   Finally Install `ESLint` and `Prettier - Code formatter` vscode extensions if you haven't already.
+
+# Common Errors
+
+-   Ts-extension isn't found. In which case, the error maybe that we set `type: module` in `package.json`.
