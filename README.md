@@ -1,3 +1,5 @@
+A project guide to set up eslint and prettier correctly.
+
 # Setup `package.json`
 
 -   `npm init -y`
